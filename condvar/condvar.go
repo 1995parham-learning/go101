@@ -1,21 +1,11 @@
-/*
-* +===============================================
-* | Author:        Parham Alvani (parham.alvani@gmail.com)
-* |
-* | Creation Date: 14-03-2016
-* |
-* | File Name:     condvar.go
-* +===============================================
- */
+// Cond implements a condition variable,
+// a rendezvous point for goroutines waiting for or announcing the occurrence of an event.
 package main
 
 import (
 	"log"
 	"sync"
 )
-
-// Cond implements a condition variable,
-// a rendezvous point for goroutines waiting for or announcing the occurrence of an event.
 
 func main() {
 	var m sync.Mutex
