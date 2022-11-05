@@ -1,4 +1,4 @@
-module hil
+module github.com/1995parham-learning/go101/hil
 
 go 1.13
 
