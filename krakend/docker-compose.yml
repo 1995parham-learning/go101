@@ -10,3 +10,4 @@ services:
       - $PWD/config:/etc/krakend/
     command:
       run --config /etc/krakend/krakend.json
+    network_mode: host

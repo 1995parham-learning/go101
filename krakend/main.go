@@ -1,3 +1,5 @@
+// krakend is an api gateway and here we are going to test it.
+// curl 127.0.0.1:8080/hello to see it in action
 package main
 
 import (
