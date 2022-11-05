@@ -1,3 +1,7 @@
+// changes response body with a middleware.
+// this middleware override the response writer with a
+// custom writer so we can read it again in the middleware
+// and create another response.
 package main
 
 import (
