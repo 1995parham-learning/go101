@@ -1,4 +1,4 @@
-module change-body-middleware
+module github.com/1995parham-learning/go101/change-body-middleware
 
 go 1.19
 

@@ -1,4 +1,4 @@
-module beehive-hello
+module github.com/1995parham-learning/go101/beehive-hello
 
 go 1.14
 
