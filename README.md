@@ -454,7 +454,7 @@ Fibonacci sequence in Go.
 
 Adds some C to Go. :yum:
 
-### [monte-carlo](monte-carlo)
+### [Monte Carlo](monte-carlo)
 
 Monte-Carlo method for estimating the PI. check [here](https://academo.org/demos/estimating-pi-monte-carlo/) for more information.
 
