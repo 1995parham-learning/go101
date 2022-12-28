@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Golang is an awesome language but it filters our country. It is similar to C programming.
+Golang is an awesome language, but it filters our country. It is similar to C programming.
 We can use it for writing code as terminal applications or servers.
 
 ## Go Modules
@@ -12,7 +12,7 @@ In most cases, the error message recommends a command to fix the problem.
 
 ## `gotip`
 
-The gotip command compiles and runs the go command from the development tree. To install, run:
+The `gotip` command compiles and runs the go command from the development tree. To install, run:
 
 ```bash
 go install golang.org/dl/gotip@latest
@@ -37,7 +37,7 @@ We have different implementation of C library.
 
 ## Testing
 
-To test with go, *testify* is an awesome library. it has suite, require and assert.
+To test with go, _testify_ is an awesome library. it has suite, require and assert.
 
 [Testify - Thou Shalt Write Tests](https:pkg.go.dev/github.com/stretchr/testify)
 
@@ -119,7 +119,7 @@ type WithStats interface {
 ```
 
 Writing tests with `testify` is awesome, so use them. Also, I write tests with mock for the higher modules and tests the low level one with the real dependencies.
-For application that has really good mocks like `redis`, I have used them instead of real one.
+For application that has really great mocks like `redis`, I have used them instead of real one.
 
 ## Object Relational Mapping
 
@@ -168,9 +168,9 @@ db.Where("name = ?", "parham").First()
 db.Where("name = ?", "parham").Find()
 ```
 
-- *User* (structure): plural snake-case as table name
-- *ID* (field): primary-key by default, *please pay attention*
-- *FirstName* (field): snake-case as column name
+- _User_ (structure): plural snake-case as table name
+- _ID_ (field): primary-key by default, _please pay attention_
+- _FirstName_ (field): snake-case as column name
 
 Hooks as methods on model.
 
@@ -246,7 +246,7 @@ func (JSONMap) GormDBDataType(db *gorm.DB, field *schema.Field) string {
 
 ### Ent
 
-ent is a simple, yet powerful entity framework for Go, that makes it easy to build and maintain applications with large data-models and sticks with the following principles:
+[ent](https://entgo.io/) is a simple, yet powerful entity framework for Go, that makes it easy to build and maintain applications with large data-models and sticks with the following principles:
 
 - Easily model database schema as a graph structure.
 - Define schema as a programmatic Go code.
