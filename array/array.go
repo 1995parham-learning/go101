@@ -24,11 +24,11 @@ func main() {
 	fmt.Println(Q2)
 	fmt.Println(summer)
 
-	// Getting slices capacity
+	// getting slices capacity
 	fmt.Println(cap(Q2))
 	fmt.Println(cap(summer))
 
-	// Getting slice and array element address
+	// getting slice and array element address
 	fmt.Println(&months[0])
 	fmt.Println(&Q2[0])
 }
