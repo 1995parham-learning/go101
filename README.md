@@ -416,6 +416,27 @@ To this just do subscribe with on-connect.
 - [BadgerDB is an embeddable, persistent and fast key-value (KV) database written in pure Go.](https://github.com/dgraph-io/badger)
 - <https://github.com/hibiken/asynq>
 
+## NATS
+
+An Awesome message broker in Go.
+
+### MQTT Interface
+
+The NATS 2.2 has the MQTT interface and supports QoS 0 and 1 based on its Jetstream feature.
+The following command subscribe on the hello topic with QoS 1.
+The `--no-clean` option reserves information of the given client ID.
+If we want to use `--no-clean` option then we must use unique client id for each driver/passenger but we gain message persistence in case of connection lost.
+
+```bash
+mqtt subscribe  -h 127.0.0.1 -p 1883 -q 1 -t hello -v -i khers --no-clean
+
+mqtt publish -h 127.0.0.1 -p 1883 -q 1 -t hello -m 'world'
+```
+
+### Deployment
+
+deploy NATS with its [[https://github.com/nats-io/k8s/tree/master/helm/charts/nats][official chart]] then you can use its [[https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-nats-exporter][prometheus exporter]] to gather its metrics which also supports service monitor.
+
 ## Projects
 
 ### [Array](array)
