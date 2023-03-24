@@ -396,21 +396,6 @@ Also, there is another official library for Streams in Golang:
 
 [A client library for RabbitMQ streams](https://github.com/rabbitmq/rabbitmq-stream-go-client)
 
-## MQTT
-
-The pure Go implementation of mqtt protocol is available from [paho.mqtt.golang](https://github.com/eclipse/paho.mqtt.golang).
-
-```go
- c.setConnected(connected)
- DEBUG.Println(CLI, "client is connected/reconnected")
- if c.options.OnConnect != nil {
-  go c.options.OnConnect(c)
- }
-```
-
-This implementation works great, and you must not forget to re-subscribe on connection lost
-To this just do subscribe with on-connect.
-
 ## To Read
 
 - [BadgerDB is an embeddable, persistent and fast key-value (KV) database written in pure Go.](https://github.com/dgraph-io/badger)
