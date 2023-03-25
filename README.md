@@ -126,10 +126,10 @@ For application that has really great mocks like `redis`, I have used them inste
 
 GORM is a go's object relational mapping.
 
-[gorm.io/gorm](https://pkg.go.dev/gorm.io/gorm)
-[gorm.io/driver/postgres](https://pkg.go.dev/gorm.io/driver/postgres)
-[gorm.io/driver/mysql](https://pkg.go.dev/gorm.io/driver/mysql)
-[gorm.io/driver/sqlite](https://pkg.go.dev/gorm.io/driver/sqlite)
+- [gorm.io/gorm](https://pkg.go.dev/gorm.io/gorm)
+- [gorm.io/driver/postgres](https://pkg.go.dev/gorm.io/driver/postgres)
+- [gorm.io/driver/mysql](https://pkg.go.dev/gorm.io/driver/mysql)
+- [gorm.io/driver/sqlite](https://pkg.go.dev/gorm.io/driver/sqlite)
 
 Please note that by using the PostgreSQL driver you have the whole world dependencies in your go.sum.
 
