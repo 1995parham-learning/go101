@@ -243,41 +243,6 @@ func (JSONMap) GormDBDataType(db *gorm.DB, field *schema.Field) string {
 }
 ```
 
-### Ent
-
-[ent](https://entgo.io/) is a simple, yet powerful entity framework for Go, that makes it easy to build and maintain applications with large data-models and sticks with the following principles:
-
-- Easily model database schema as a graph structure.
-- Define schema as a programmatic Go code.
-- Static typing based on code generation.
-- Database queries and graph traversals are easy to write.
-- Simple to extend and customize using Go templates.
-
-[Quick Introduction](https://entgo.io/docs/getting-started/)
-
-```go
-package schema
-
-import "entgo.io/ent"
-
-// User holds the schema definition for the User entity.
-type User struct {
-  ent.Schema
-}
-
-// Fields of the User.
-func (User) Fields() []ent.Field {
-  return nil
-}
-
-// Edges of the User.
-func (User) Edges() []ent.Edge {
-  return nil
-}
-```
-
-Based on the written schema then you need to generate the ent code and after that you can do whatever you want with the ent.
-
 ## Logging
 
 As I said there are two applications for Golang.
@@ -395,11 +360,6 @@ Also, there is another official library for Streams in Golang:
 
 [A client library for RabbitMQ streams](https://github.com/rabbitmq/rabbitmq-stream-go-client)
 
-## To Read
-
-- [BadgerDB is an embeddable, persistent and fast key-value (KV) database written in pure Go.](https://github.com/dgraph-io/badger)
-- <https://github.com/hibiken/asynq>
-
 ## NATS
 
 An Awesome message broker in Go.
@@ -416,10 +376,6 @@ mqtt subscribe  -h 127.0.0.1 -p 1883 -q 1 -t hello -v -i khers --no-clean
 
 mqtt publish -h 127.0.0.1 -p 1883 -q 1 -t hello -m 'world'
 ```
-
-### Deployment
-
-deploy NATS with its [[https://github.com/nats-io/k8s/tree/master/helm/charts/nats][official chart]] then you can use its [[https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-nats-exporter][prometheus exporter]] to gather its metrics which also supports service monitor.
 
 ## Projects
 
