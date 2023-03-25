@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Golang is an awesome language, but it filters our country. It is similar to C programming.
+Golang is an awesome language, but it has sanctioned our country. It is similar to C programming language.
 We can use it for writing code as terminal applications or servers.
 
 ## Go Modules
@@ -37,11 +37,10 @@ We have different implementation of C library.
 
 ## Testing
 
-To test with go, _testify_ is an awesome library. it has suite, require and assert.
+To test with go, [testify](https://pkg.go.dev/github.com/stretchr/testify) is an awesome library.
+It has suite, require and assert.
 
-[Testify - Thou Shalt Write Tests](https:pkg.go.dev/github.com/stretchr/testify)
-
-Always use `_test` prefix on package for tests but in case of internal tests
+Always use `_test` prefix on packages for writing tests but in case of internal tests
 in which you need to access private package members use `_internal_test.go` as filename.
 
 ```go
@@ -123,16 +122,16 @@ For application that has really great mocks like `redis`, I have used them inste
 
 ## Object Relational Mapping
 
-### Gorm
+### GORM
 
-Gorm is a go's object relational mapping.
+GORM is a go's object relational mapping.
 
 [gorm.io/gorm](https://pkg.go.dev/gorm.io/gorm)
 [gorm.io/driver/postgres](https://pkg.go.dev/gorm.io/driver/postgres)
 [gorm.io/driver/mysql](https://pkg.go.dev/gorm.io/driver/mysql)
 [gorm.io/driver/sqlite](https://pkg.go.dev/gorm.io/driver/sqlite)
 
-Please note that by using the Postgres driver you have the whole world dependencies in your go.sum.
+Please note that by using the PostgreSQL driver you have the whole world dependencies in your go.sum.
 
 ```go
 import (
