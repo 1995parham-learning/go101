@@ -31,11 +31,11 @@ To download a specific CL, run `gotip download NUMBER`.
 You can control to use `cgo` with `CGO_ENABLED` flag in go build.
 We have different implementation of C library.
 
-- GNU C Library (glibc)
-- musl
+- GNU C Library (`glibc`)
+- `musl`
 - Microsoft C Runtime Library
 
-## Testing
+## Testing with `testify`
 
 To test with go, [testify](https://pkg.go.dev/github.com/stretchr/testify) is an awesome library.
 It has suite, require and assert.
@@ -122,10 +122,14 @@ For application that has really great mocks like `redis`, I have used them inste
 
 ## Logging
 
-As I said there are two applications for Golang.
-In the terminal application it is better to use [pterm](https://pterm.sh) to show the logs and other information.
-In case of the server application [zap](https://github.com/uber-go/zap) is a better choice because it has structure logging,
+As I said there are mainly two types of applications developed by Golang.
+In the terminal applications, it is better to use [pterm](https://pterm.sh) to show the logs and other information
+instead of simply printing them.
+In case of the server applications, [zap](https://github.com/uber-go/zap) is a better choice because it has structure logging,
 and you can also write the logs on console and syslog at the same time.
+
+Structure logging increase the search efficiency for when you want to search among your
+logs on your log aggregation system.
 
 ## Telemetry
 

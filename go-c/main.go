@@ -14,7 +14,7 @@ const (
 )
 
 func main() {
-	fmt.Println("Hello world .. from Go :D")
+	fmt.Println("Hello world... in Go")
 	C.say_hello(C.CString("Parham Alvani"))
 	C.setup_timer()
 	C.setup_signal_handler()
@@ -24,7 +24,7 @@ func main() {
 
 		for {
 			<-timer
-			fmt.Println("Go Go ...")
+			fmt.Println("100 miliseconds in Go")
 		}
 	}()
 
