@@ -1,0 +1,10 @@
+default:
+    @just --list
+
+# build and run the c-go binary, because c-go cannot run by go run.
+run: build
+    ./c-go
+
+# build the c-go binary
+build:
+    go build -o c-go
