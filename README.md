@@ -243,23 +243,6 @@ Also, there is another official library for Streams in Golang:
 
 [A client library for RabbitMQ streams](https://github.com/rabbitmq/rabbitmq-stream-go-client)
 
-## NATS
-
-An Awesome message broker in Go.
-
-### MQTT Interface
-
-The NATS 2.2 has the MQTT interface and supports QoS 0 and 1 based on its Jetstream feature.
-The following command subscribe on the hello topic with QoS 1.
-The `--no-clean` option reserves information of the given client ID.
-If we want to use `--no-clean` option then we must use unique client id for each driver/passenger but we gain message persistence in case of connection lost.
-
-```bash
-mqtt subscribe  -h 127.0.0.1 -p 1883 -q 1 -t hello -v -i khers --no-clean
-
-mqtt publish -h 127.0.0.1 -p 1883 -q 1 -t hello -m 'world'
-```
-
 ## Projects
 
 ### [Array](array)
