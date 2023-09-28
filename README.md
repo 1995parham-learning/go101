@@ -28,11 +28,11 @@ To download an alternative branch, run `gotip download BRANCH` and to download a
 ## `libc`
 
 You can control to use `cgo` with `CGO_ENABLED` flag in go build.
-We have different implementation of C library.
+We have different implementation of C standard library.
 
-- GNU C Library (`glibc`)
-- `musl`
-- Microsoft C Runtime Library
+- [GNU C Library (`glibc`)](https://www.gnu.org/software/libc/)
+- [`musl`](https://musl.libc.org/)
+- [Microsoft C Runtime Library](https://learn.microsoft.com/en-us/cpp/c-runtime-library/c-run-time-library-reference?view=msvc-170)
 
 ## Testing with `testify`
 
