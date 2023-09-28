@@ -14,7 +14,7 @@ In most cases, the error message recommends a command to fix the problem.
 
 ## `gotip`
 
-The `gotip` command compiles and runs the go command from the development tree. To install, run:
+One useful tool that comes with Golang is `gotip`, which allows you to test upcoming changes and experimental features.
 
 ```bash
 go install golang.org/dl/gotip@latest
@@ -23,10 +23,9 @@ gotip download
 
 And then use the `gotip` command as if it were your normal go command.
 
-To update, run `gotip download` again.
-This will always download the main branch.
-To download an alternative branch, run `gotip download BRANCH`.
-To download a specific CL, run `gotip download NUMBER`.
+After installation, use the `gotip` command instead of your normal go command to have latest features.
+To update, run `gotip download` again. This will always download the main branch.
+To download an alternative branch, run `gotip download BRANCH` and to download a specific CL, run `gotip download NUMBER`.
 
 ## `libc`
 
