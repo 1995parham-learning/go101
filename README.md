@@ -21,8 +21,6 @@ go install golang.org/dl/gotip@latest
 gotip download
 ```
 
-And then use the `gotip` command as if it were your normal go command.
-
 After installation, use the `gotip` command instead of your normal go command to have latest features.
 To update, run `gotip download` again. This will always download the main branch.
 To download an alternative branch, run `gotip download BRANCH` and to download a specific CL, run `gotip download NUMBER`.
