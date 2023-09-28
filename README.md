@@ -2,8 +2,9 @@
 
 ## Introduction
 
+The Go programming language, also known as Golang, has gained popularity among software practitioners since its release in 2009. This language offers various features and advantages that make it a preferred choice for many developers.
 Golang is an awesome language, but it has sanctioned our country. It is similar to C programming language.
-We can use it for writing code as terminal applications or servers.
+We can use it for writing code as terminal applications or servers. I had experience in using it for writing ReST API and GrapQL servers. For the terminal application there are many fun library out there like [`bubbletea`](https://github.com/charmbracelet/bubbletea) and [`tcell`](https://github.com/gdamore/tcell) which provide easy-to-use interfaces for creating interactive command-line applications.
 
 ## Go Modules
 
